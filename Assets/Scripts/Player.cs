@@ -2,6 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(Animation))]
+[RequireComponent(typeof(SpriteRenderer))]
+[RequireComponent(typeof(AudioSource))]
+
 public class Player : MonoBehaviour
 {
     [SerializeField] private float _speed = 5;
